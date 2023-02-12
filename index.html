@@ -1,88 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интернет-магазин Device</title>
-    <link rel="stylesheet" href="./styles/style.css">
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Интернет-магазин Device</title>
+   <link rel="stylesheet" href="./styles/style.css">
 </head>
-
 <body>
-    <header class="main-header">
-        <img class="main-logo" src="./images/main-logo.svg" alt="Логотип магазина Device." width="145" height="36">
 
-        <div class="catalog-select-wrapper">
+   <header class="header page-header">
+      <div class="container">
+         <h1 class="visually-hidden">
+            Интернет-магазин Device
+         </h1>
+         <a class="logo-link" href="#">
+            <img class="header-logo" src="./images/header-logo.svg" alt="Логотип магазина Device." width="145" height="36">
+         </a>
 
-            <a class="catalog-link catalog-main-link" href="catalog.html">Каталог товаров</a>
+         <div class="header-menu">
+            <div class="header-user-menu">
 
-            <label class="show-menu-label">
-                <input class="checkbox visually-hidden" type="checkbox">
-                    <span class="control-mark"></span>
-                    <span class="visually-hidden">Открыть меню каталога</span>
-                <div class="dropdown-catalog-menu dropdown-catalog-menu-closed">
-                    <ul class="gadgets-list">
-                        <li class="gadgets-item">
-                            <a class="gadgets-link" href="#">
-                                Виртуальная реальность
-                            </a>
-                        </li>
-                        <li class="gadgets-item">
-                            <a class="gadgets-link" href="#">
-                                Моноподы для cелфи
-                            </a>
-                        </li>
-                        <li class="gadgets-item">
-                            <a class="gadgets-link" href="#">
-                                Экшн-камеры
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="gadgets-list">
-                        <li class="gadgets-item">
-                        <a class="gadgets-link" href="#">
-                            Фитнес-браслеты
-                        </a>
-                        </li>
-                        <li class="gadgets-item">
-                            <a class="gadgets-link" href="#">
-                                Умные часы
-                            </a>
-                        </li>
-                    </ul>
-                    <ul class="gadgets-list">
-                        <li class="gadgets-item">
-                            <a class="gadgets-link" href="#">
-                                Квадрокоптеры
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </label>
+               <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
+                  <label class="search-form-label">
+                     <input class="search-form-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+                     <span class="visually-hidden">Поиск</span>
+                  </label>
+                  <button class="search-form-button" type="submit">
+                     Найти
+                  </button>
+               </form>
 
-            <ul class="services">
-                <li class="services-item">
-                    <a class="catalog-link" href="#">
-                        Доставка
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a class="catalog-link" href="#">
-                        Гарантия
-                    </a>
-                </li>
-                <li class="services-item">
-                    <a class="catalog-link" href="#">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
-        </div>
+               <ul class="user-menu-list">
+                  <li class="user-menu-item user-menu-item-login">
+                     <a class="user-menu-link user-menu-link-login" href="#">Войти</a>
+                  </li>
+                  <li class="user-menu-item">
+                     <a class="user-menu-link user-menu-link-compare" href="#">Сравнить</a>
+                  </li>
+                  <li class="user-menu-item user-menu-link-cart">
+                     <a class="user-menu-link" href="#">Корзина
+                        <span class="cart-count">2</span>
+                        <span class="visually-hidden">Товаров в корзине</span>
+                     </a>
+                  </li>
+               </ul>
+
+            </div>
+
+            <div class="catalog">
+               <div class="catalog-wrapper">
+                  <a class="catalog-link catalog-main-link" href="catalog.html">
+                     Каталог товаров
+                  </a>
+                  <label class="show-menu-label" for="checkbox">
+                     <input class="checkbox visually-hidden" type="checkbox" id="checkbox">
+                     <span class="control-mark"></span>
+                     <span class="visually-hidden">Открыть меню каталога</span>
+                     <div class="dropdown-catalog-menu">
+                        <ul class="gadgets-list">
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#">Виртуальная реальность</a>
+                           </li>
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#">Моноподы для cелфи</a>
+                           </li>
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#">Экшн-камеры</a>
+                           </li>
+                        </ul>
+                        <ul class="gadgets-list">
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#">Фитнес-браслеты</a>
+                           </li>
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#"> Умные часы</a>
+                           </li>
+                        </ul>
+                        <ul class="gadgets-list">
+                           <li class="gadgets-item">
+                              <a class="gadgets-link" href="#">Квадрокоптеры</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </label>
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </header>
+
+   <main class="main-container">
+
+   </main>
+
+   <footer class="page-footer">
+      <div class="container">
+         <a class="logo-link" href="#">
+            <img class="footer-logo" src="./images/footer-logo.svg" alt="Логотип магазина Device." width="145" height="36">
+         </a>
+      </div>
+
+   </footer>
 
 
 
-    </header>
 
+
+   
 </body>
-
 </html>
