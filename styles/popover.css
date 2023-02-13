@@ -1,0 +1,70 @@
+.dropdown-catalog-menu {
+    position: absolute;
+    left: -60px;
+    top: 20px;
+    display: none;
+    width: 1160px;
+    min-height: 180px;
+    padding: 33px 60px 27px;
+    background-color: #FFE17F;
+  }
+  
+  .control-mark {
+    position: absolute;
+    top: -10px;
+    left: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #C4C4C4;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  .control-mark::before {
+    content: '';
+    display: none;
+    width: 16px;
+    height: 2px;
+    background-image: url(../images/minus-icon.svg);
+  }
+  
+  .control-mark::after {
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/plus-icon.svg);
+  }
+  
+  .checkbox:hover + .control-mark {
+     border-color: #000000;
+  }
+  
+  .checkbox:hover + .control-mark::after {
+     background-image: url(../images/plus-black-icon.svg);
+  }
+  
+  .checkbox:checked ~ .dropdown-catalog-menu {
+    display: flex;
+  }
+  
+  .checkbox:checked + .control-mark::before {
+    display: block;
+  }
+  
+  .checkbox:checked + .control-mark::after {
+    display: none;
+  }
+   
+  .gadgets-list:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .gadgets-link {
+    font-size: 16px;
+    line-height: 18px;
+    color: #000000;
+  }
