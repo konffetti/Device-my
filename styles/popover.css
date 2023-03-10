@@ -68,3 +68,8 @@
     line-height: 18px;
     color: #000000;
   }
+
+  
+.checkbox1:checked ~ .service-description {
+  display: flex;
+}
